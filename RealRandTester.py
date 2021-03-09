@@ -37,7 +37,7 @@ def return_digits(num):
 
         outnum += dg
 
-        time.sleep(.00001)
+        time.sleep(.000001)
 
     aval = (float(outnum) * div)     
 
@@ -85,15 +85,10 @@ alst = []
 
 for ctr in range(numr):
 
-    print(str(ctr))
-
-    #try: 
+    #print(str(ctr))
+ 
     ans = random_number(numin)
     alst.append(ans)
-
-    #except:
-
-        #print("Recursion Error.")
 
 outval = statistics.mean(alst)
 
