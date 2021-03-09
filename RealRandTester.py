@@ -3,6 +3,8 @@ import datetime
 import time
 import statistics
 
+#This function retrieves a product to use as a multiplier with with original number
+
 def return_digits(num):
 
     x = 9
@@ -43,11 +45,15 @@ def return_digits(num):
 
     return(bval)
 
+#This function uses the second argument to transform the first via multiplication
+
 def transpose(num, ranm):
 
     prod = int(num * ranm)
 
     return(prod)
+
+#This function sets up and calls the other two, from a simple original value. It returns a "randomized" integer.
 
 def random_number(val):
 
@@ -58,6 +64,10 @@ def random_number(val):
     res2 = transpose(numa, res1)
 
     return res2
+
+##################################
+
+#This code is for getting the input from the console and calling the function(s)
 
 print("")
 
@@ -70,6 +80,8 @@ numrep = input("How many times would you like to test this?: ")
 numr = int(numrep)
 
 alst = []
+
+#This code calculates and shares the mean value to test the function
 
 for ctr in range(numr):
 

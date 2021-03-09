@@ -1,5 +1,7 @@
 
-def return_digits(num):
+#This function retrieves a product to use as a multiplier with with original number
+
+def return_product(num):
 
     import datetime
     import time
@@ -36,9 +38,7 @@ def return_digits(num):
 
         time.sleep(.0001)
 
-    out = float(outnum)
-
-    #aval =  out * .000000001    
+    out = float(outnum)  
 
     aval = out * div
 
@@ -46,21 +46,29 @@ def return_digits(num):
 
     return(bval)
 
+#This function uses the second argument to transform the first via multiplication
+
 def transpose(num, ranm):
 
     prod = int(round(num * ranm))
 
     return(prod)
 
+#This function sets up and calls the other two, from a simple original value. It returns a "randomized" integer.
+
 def random_number(val):
 
-    res1 = return_digits(val)
+    res1 = return_product(val)
 
     numa = float(numin)
 
     res2 = transpose(numa, res1)
 
     return res2
+
+##################################
+
+#This code is for getting the input from the console and calling the function(s)
 
 print("")
 
