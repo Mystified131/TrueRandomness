@@ -76,6 +76,10 @@ def random_number(val):
 
     return res3
 
+#res = random_number(100)
+
+#print(res)
+
 ##THE GHOST OF THE SHADOW##
 
 

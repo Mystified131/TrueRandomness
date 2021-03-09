@@ -72,6 +72,10 @@ def random_number2(val, val2):
 
     return res2b
 
+res = random_number2(50, 100)
+
+print(res)
+
 ##THE GHOST OF THE SHADOW##
 
 
