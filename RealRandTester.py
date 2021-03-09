@@ -37,7 +37,7 @@ def return_digits(num):
 
         outnum += dg
 
-        time.sleep(.000001)
+        time.sleep(.0000001)
 
     aval = (float(outnum) * div)     
 
@@ -88,6 +88,7 @@ for ctr in range(numr):
     #print(str(ctr))
  
     ans = random_number(numin)
+    print(ans)
     alst.append(ans)
 
 outval = statistics.mean(alst)

@@ -36,7 +36,7 @@ def return_product(num):
 
         outnum += dg
 
-        time.sleep(.0001)
+        time.sleep(.0000001)
 
     out = float(outnum)  
 
