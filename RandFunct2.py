@@ -1,7 +1,9 @@
 
 #This function retrieves a product to use as a multiplier with with original number
 
-def return_product(num):
+def return_product(num1):
+
+    num = str(num1)
 
     import datetime
     import time
@@ -56,38 +58,22 @@ def transpose(num, ranm):
 
 #This function sets up and calls the other two, from a simple original value. It returns a "randomized" integer.
 
-def random_number_2(val, val2):
+def random_number2(val, val2):
 
-    val3 = float(val2) - float(val)
+    val3 = float(val2 - 1) - float(val)
 
     val4 = str(val3)
 
     res1 = return_product(val4)
 
-    numa = float(numin)
-
-    res2 = transpose(numa, res1)
+    res2 = transpose(val3, res1)
 
     res2b = int(float(val) + res2)
 
     return res2b
 
-##################################
+##THE GHOST OF THE SHADOW##
 
-#This code is for getting the input from the console and calling the function(s)
 
-print("")
-
-numin = input("Please enter a number to act as a lower range for the randomness: ")
-
-print("")
-
-numinb = input("Please enter a number to act as a higher range for the randomness: ")
-
-print("")
-
-ans = random_number(numin, numinb)
-
-print("The number is: ", ans)
 
 

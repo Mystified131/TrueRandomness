@@ -7,10 +7,12 @@ import statistics
 
 def return_digits(num):
 
+    num1 = str(num)
+
     x = 9
     
-    if len(num) > 9:
-        x = len(num)
+    if len(num1) > 9:
+        x = len(num1)
 
     dv = "."
 
@@ -62,8 +64,16 @@ def random_number(val):
     numa = float(numin)
 
     res2 = transpose(numa, res1)
+    
+    if res2 >= 1:
 
-    return res2
+        res3 = res2 - 1
+
+    if res2 < 1:
+        
+        res3 = 0
+
+    return res3
 
 ##################################
 

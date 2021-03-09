@@ -1,7 +1,9 @@
 
 #This function retrieves a product to use as a multiplier with with original number
 
-def return_product(num):
+def return_product(num1):
+
+    num = str(num1)
 
     import datetime
     import time
@@ -60,24 +62,20 @@ def random_number(val):
 
     res1 = return_product(val)
 
-    numa = float(numin)
+    numa = float(val)
 
     res2 = transpose(numa, res1)
 
-    return res2
+    if res2 >= 1:
 
-##################################
+        res3 = res2 - 1
 
-#This code is for getting the input from the console and calling the function(s)
+    if res2 < 1:
+        
+        res3 = 0
 
-print("")
+    return res3
 
-numin = input("Please enter a number to act as a range for the randomness: ")
-
-print("")
-
-ans = random_number(numin)
-
-print("The number is: ", ans)
+##THE GHOST OF THE SHADOW##
 
 
