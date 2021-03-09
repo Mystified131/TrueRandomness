@@ -30,7 +30,7 @@ def return_digits(num):
 
     bval = round(aval, x)
 
-    return(aval)
+    return(bval)
 
 def transpose(num, ranm):
 
