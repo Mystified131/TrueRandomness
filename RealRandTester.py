@@ -27,7 +27,7 @@ def return_digits(num):
 
     aval = (float(outnum) * .000000001)     
 
-    bval = round(aval, 3)
+    bval = round(aval, x)
 
     return(bval)
 
@@ -41,7 +41,7 @@ def random_number(val):
 
     res1 = return_digits(val)
 
-    numa = int(numin)
+    numa = float(numin)
 
     res2 = transpose(numa, res1)
 

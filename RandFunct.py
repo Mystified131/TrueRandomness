@@ -22,13 +22,15 @@ def return_digits(num):
 
         outnum += dg
 
-        time.sleep(.00001)
+        time.sleep(.0001)
 
-    aval = (float(outnum) * .000000001)     
+    out = float(outnum)
 
-    bval = round(aval, 3)
+    aval =  out * .000000001    
 
-    return(bval)
+    bval = round(aval, x)
+
+    return(aval)
 
 def transpose(num, ranm):
 
@@ -40,7 +42,7 @@ def random_number(val):
 
     res1 = return_digits(val)
 
-    numa = int(numin)
+    numa = float(numin)
 
     res2 = transpose(numa, res1)
 
