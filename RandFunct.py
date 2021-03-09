@@ -1,8 +1,4 @@
 
-#import datetime
-#import time
-#import statistics
-
 def return_digits(num):
 
     import datetime
