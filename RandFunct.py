@@ -6,6 +6,18 @@ def return_digits(num):
 
     x = 9
 
+    if len(num) > 9:
+        x = len(num)
+
+    dv = "."
+
+    for x1 in range(x - 1):
+        dv += "0"
+
+    dv += "1"
+
+    div = float(dv)
+
     outnum = ""
 
     for ctr in range(x):
@@ -26,7 +38,9 @@ def return_digits(num):
 
     out = float(outnum)
 
-    aval =  out * .000000001    
+    #aval =  out * .000000001    
+
+    aval = out * div
 
     bval = round(aval, x)
 

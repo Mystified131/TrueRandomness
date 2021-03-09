@@ -6,6 +6,18 @@ import statistics
 def return_digits(num):
 
     x = 9
+    
+    if len(num) > 9:
+        x = len(num)
+
+    dv = "."
+
+    for x1 in range(x - 1):
+        dv += "0"
+
+    dv += "1"
+
+    div = float(dv)
 
     outnum = ""
 
@@ -25,7 +37,7 @@ def return_digits(num):
 
         time.sleep(.00001)
 
-    aval = (float(outnum) * .000000001)     
+    aval = (float(outnum) * div)     
 
     bval = round(aval, x)
 
