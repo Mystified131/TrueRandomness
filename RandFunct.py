@@ -1,9 +1,12 @@
 
-import datetime
-import time
-import statistics
+#import datetime
+#import time
+#import statistics
 
 def return_digits(num):
+
+    import datetime
+    import time
 
     x = 9
 
@@ -33,7 +36,7 @@ def return_digits(num):
 
 def transpose(num, ranm):
 
-    prod = int(num * ranm)
+    prod = int(round(num * ranm))
 
     return(prod)
 
@@ -53,26 +56,8 @@ numin = input("Please enter a number to act as a range for the randomness: ")
 
 print("")
 
-numrep = input("How many times would you like to test this?: ")
+ans = random_number(numin)
 
-numr = int(numrep)
-
-alst = []
-
-for ctr in range(numr):
-
-    print(str(ctr))
-
-    #try: 
-    ans = random_number(numin)
-    alst.append(ans)
-
-    #except:
-
-        #print("Recursion Error.")
-
-outval = statistics.mean(alst)
-
-print("The mean is: ", outval)
+print("The number is: ", ans)
 
 
