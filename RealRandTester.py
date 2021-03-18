@@ -98,7 +98,10 @@ for ctr in range(numr):
     #print(str(ctr))
  
     ans = random_number(numin)
-    print(ans)
+    tal = numr - ctr
+    tall = str(tal)
+    anss = str(ans)
+    print(tall + " : " + anss)
     alst.append(ans)
 
 outval = statistics.mean(alst)
